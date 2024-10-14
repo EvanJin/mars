@@ -8,6 +8,8 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "mars-cli:dev": "turbo --filter=mars-cli dev",
+    "mars-cli:build": "pnpm --filter=mars-cli build",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
