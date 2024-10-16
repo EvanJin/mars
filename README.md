@@ -1,0 +1,3 @@
+# Mora
+
+Modèle rapide 
