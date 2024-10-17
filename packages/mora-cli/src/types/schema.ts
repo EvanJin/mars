@@ -29,7 +29,8 @@ export const WebFramework = z.object({
       utils: z.string().default("utils"),
       types: z.string().default("types"),
     })
-    .optional(),
+    .optional()
+    .default({}),
 });
 
 export type IWebFramework = z.infer<typeof WebFramework>;
@@ -50,8 +51,8 @@ export type IServiceFramework = z.infer<typeof ServiceFramework>;
 
 export const MoraFramework = z.object({
   $schema: z.string().default("https://mora.shopee.io/schema/more.schema.json"),
-  web: WebFramework.optional(),
-  service: ServiceFramework.optional(),
+  web: WebFramework.optional().default({}),
+  service: ServiceFramework.optional().default({}),
 });
 
 export type IMoraFramework = z.infer<typeof MoraFramework>;

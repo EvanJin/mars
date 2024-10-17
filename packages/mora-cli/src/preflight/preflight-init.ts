@@ -6,7 +6,7 @@ import logger from "@/src/utils/logger";
 import Project from "@/src/utils/project";
 import { IPreflightInitRes } from "@/src/types/errors";
 import Logger from "@/src/utils/logger";
-import { WebFramework } from "../types/schema";
+import { MoraFramework, WebFramework } from "../types/schema";
 
 export default class PreflightInit {
   static errors: Record<string, boolean> = {};
@@ -50,7 +50,7 @@ export default class PreflightInit {
 
     Logger.info(
       "Project info:",
-      JSON.stringify(WebFramework.parse({}), null, 2),
+      JSON.stringify(MoraFramework.parse({}), null, 2),
     );
 
     return {
