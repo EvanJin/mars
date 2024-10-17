@@ -1,5 +1,5 @@
 {
-  "name": "mars",
+  "name": "mora",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -8,8 +8,8 @@
     "build": "turbo run build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "mars-cli:dev": "turbo --filter=mars-cli dev",
-    "mars-cli:build": "pnpm --filter=mars-cli build",
+    "mora-cli:dev": "pnpm --filter=mora-cli dev",
+    "mora-cli:build": "pnpm --filter=mora-cli build",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {

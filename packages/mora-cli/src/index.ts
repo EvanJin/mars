@@ -12,7 +12,7 @@ process.on("SIGTERM", () => process.exit(0));
 
 function main() {
   const program = new Command()
-    .name("mars-cli")
+    .name("mora-cli")
     .description("add components and dependencies to your project")
     .version(
       packageJson.version || "1.0.0",
